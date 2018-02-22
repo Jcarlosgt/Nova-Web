@@ -43,10 +43,12 @@ header .logo{
 header .logo img{
     width: 80%;
     vertical-align: top;
+    z-index: 1;
 }
 header .eslogan{
     text-align: center;
     color:#53c86c;
+    z-index: 1;
 }
 .btn-social{
     text-align: center;
@@ -197,10 +199,6 @@ header .img-astronauta{
     padding: 10px 20px;;
 }
 
-.main .servicios .planes .intermedio .btn-servicios a{
-
-}
-
 /*---------------------------------------------------------*/
 
 .main .contacto{
@@ -294,3 +292,59 @@ footer .copyrigth{
     color: #fff;
 }
 
+@media screen and (max-width: 800px){
+
+    header .logo{
+        height: 100%;
+        margin-top: 20%;
+    }
+    header .menu{
+        text-align: center;
+    }
+    .main .servicios{
+        height: 100%;
+        transform: none;
+    }
+    .main .servicios .container .planes{
+        flex-direction: column;
+        margin:0 10%;
+        height: 100%;
+        transform: none;
+    } 
+    .main .servicios .container .planes .basico,
+    .main .servicios .container .planes .intermedio,
+    .main .servicios .container .planes .avanzado{
+        text-align: center;
+    }
+    .main .servicios .container .planes .basico .btn-servicios,
+    .main .servicios .container .planes .intermedio .btn-servicios,
+    .main .servicios .container .planes .avanzado .btn-servicios{
+        text-align: center;
+        width:100%;
+    }
+    .main .servicios .container .planes .avanzado .btn-servicios{
+        margin-top: 40px;
+    }
+    .main .servicios .container .planes .basico ul,
+    .main .servicios .container .planes .intermedio ul,
+    .main .servicios .container .planes .avanzado ul{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 400px){
+   header{
+       height: 600;;
+   }
+    header .menu{
+       text-align: center;
+   } 
+   header .logo{
+       height: 100%;
+       margin-top: 20%;
+   }
+   header .eslogan h3{
+       font-size: .8em;
+   }
+
+}
