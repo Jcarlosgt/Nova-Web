@@ -1,0 +1,296 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Roboto'; 
+}
+/* --------------------- Estilos HEADER -------------------*/
+header{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/headerbg.png");
+    background-position: center 0 ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+}
+
+header .menu{
+    text-align: right;
+}
+
+header .menu a{
+    margin-right: 15px;
+    text-decoration: none;
+    color:#fff;
+    font-weight: 300;
+    display: inline-block;
+    padding: 20px 0px;
+}
+header .menu a:hover{
+    color:#53c86c;
+}
+header .logo{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+header .logo img{
+    width: 80%;
+    vertical-align: top;
+}
+header .eslogan{
+    text-align: center;
+    color:#53c86c;
+}
+.btn-social{
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-social a{
+    width: 30px;
+    text-decoration: none;
+    display:inline-block;
+    margin-right: 20px;
+    color: #fff;
+    background: #53c86c;
+    padding: 5px;
+    border-radius: 100%;
+}
+.btn-social a:hover{
+    background: #06c42f;
+}
+header .scroll{
+    text-align: center;
+    margin-top: 40px;
+}
+header .scroll a{
+    font-size: 2em;
+    color: #53c86c;
+}
+
+header .img-astronauta{
+    position: absolute;
+    bottom:-100px;
+    left: 100px;
+}
+/*---------------------------------------------------------*/
+.main .acerca-de{
+    width: 100%;
+    height: 600px;
+    padding: 20px 0px; 
+}
+.main .acerca-de .container .acerca{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main .acerca-de .titulo{
+    text-align: center;
+}
+.main .acerca-de .titulo h2{
+    font-weight: 400;
+    color: #a5a2a2;
+}
+.main .acerca-de .descripcion{
+    text-align: justify;
+    line-height: 27px;
+}
+.main .acerca-de .titulo h2 span{
+    font-weight: 700;
+    color:#53c86c;
+}
+/*---------------------------------------------------------*/
+
+.main .servicios{
+    width: 100%;
+    height: 600px;
+    background: linear-gradient();
+    background: #134E5E; 
+    background: -webkit-linear-gradient(to left, #71B280, #134E5E);  
+    background: linear-gradient(to left, #71B280, #134E5E);
+    transform: skew(0deg, -2deg);
+}
+.main .servicios .container .planes{
+    height: 600px;
+    transform:  skew(0deg, 2deg);
+}
+
+.main .servicios .container .planes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .servicios .planes .basico,
+.main .servicios .planes .intermedio,
+.main .servicios .planes .avanzado{
+    height: 300px;
+    padding: 15px;
+    
+}
+.main .servicios .planes .basico .texto .titulo-servicio,
+.main .servicios .planes .intermedio .texto .titulo-servicio,
+.main .servicios .planes .avanzado .texto .titulo-servicio{
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+}
+
+.main .servicios .planes .basico .texto,
+.main .servicios .planes .intermedio .texto,
+.main .servicios .planes .avanzado .texto{
+    margin-bottom: 20px;
+}
+
+.main .servicios .planes .basico .texto .figura,
+.main .servicios .planes .intermedio .texto .figura,
+.main .servicios .planes .avanzado .texto .figura{
+    width: 53px;
+    height: 50px;
+    background-color: #53c86c;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%,25% 100%, 0 50%);
+}
+
+.main .servicios .planes .basico ul,
+.main .servicios .planes .intermedio ul,
+.main .servicios .planes .avanzado ul{
+    list-style: none;
+    color:#fff;
+}
+
+.main .servicios .planes .basico ul li span,
+.main .servicios .planes .intermedio ul li span,
+.main .servicios .planes .avanzado ul li span{
+    margin-right: 10px;
+    color: #53c86c;
+}
+
+.main .servicios .planes .basico .btn-servicios{
+    text-align: center;
+    margin-top: 60px; 
+}
+.main .servicios .planes .intermedio .btn-servicios{
+    text-align: center;
+    margin-top:35px;     
+}
+.main .servicios .planes .avanzado .btn-servicios{
+    text-align: center;
+}
+.main .servicios .planes .basico .btn-servicios a,
+.main .servicios .planes .intermedio .btn-servicios a,
+.main .servicios .planes .avanzado .btn-servicios a{
+    text-decoration: none;
+    background-color: #53c86c;
+    color:#fff;
+    padding: 10px 20px;;
+}
+
+.main .servicios .planes .intermedio .btn-servicios a{
+
+}
+
+/*---------------------------------------------------------*/
+
+.main .contacto{
+    width: 100%;
+    height: 600px;
+    padding: 40px 0px;
+}
+
+.main .contacto .contact{
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main .contacto .contact h3{
+    font-size: 2em;
+    color:#a5a2a2;
+}
+.main .contacto .contact h3 .signo{
+    color:#53c86c;
+    font-weight: 700;
+}
+.main .contacto .contact h3 .palabra{
+    font-weight: 700;
+}
+.main .contacto .contact .texto-contacto .texto-dos{
+    margin-left: 20px;
+    font-weight: 300;
+}
+.main .contacto .contact .formulario{
+    display:flex;
+    flex-direction: column; 
+}
+
+.main .contacto .contact .formulario input[type="text"],
+.main .contacto .contact .formulario input[type="email"],
+.main .contacto .contact .formulario textarea{
+    margin-bottom: 20px;
+    border:none;
+    border-bottom: 2px solid #53c86c;
+    outline: none;
+}
+.main .contacto .contact .formulario textarea{
+    width: 100%;
+    max-width:100%;
+    min-width: 100%;
+    height: 150px;
+    min-height: 150px; 
+    max-height: 200px;   
+}
+.main .contacto .contact .formulario .btn-enviar{
+    width:25%;
+    border:none;
+    background: #53c86c;
+    padding: 10px 20px;
+    color: #fff;
+    align-self: center;
+}
+
+/*---------------------------------------------------------*/
+
+footer{
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: #2a3952;
+    padding-top: 25px;
+}
+
+footer .nav-footer{
+    text-align: center;
+}
+footer .nav-footer a{
+    margin-right: 15px;
+    text-decoration: none;
+    color:#fff;
+    font-weight: 300;
+    display: inline-block;
+    border-bottom: 2px solid transparent; 
+}
+footer .nav-footer a:hover{
+    border-bottom: 2px solid #fff; 
+}
+
+footer .texto-diseñado,
+footer .copyrigth{
+    text-align: center;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #fff;
+}
+
